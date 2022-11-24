@@ -1,0 +1,28 @@
+.header-contact {
+    gap: 50px;
+    align-items: center;
+    display: flex;
+    letter-spacing: 0.02em;
+}
+
+.header-contact__link {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    text-decoration: none;
+    color: $text-color;
+}
+
+.header-contact__icon-envelope {
+    fill: currentColor;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+.header-contact__icon-smartphone {
+    fill: currentColor;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}

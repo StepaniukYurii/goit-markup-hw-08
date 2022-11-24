@@ -1,0 +1,11 @@
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: solid #ececec;
+    background-color: $background-color;
+}
+
+.header__container {
+    justify-content: space-between;
+    display: flex;
+}

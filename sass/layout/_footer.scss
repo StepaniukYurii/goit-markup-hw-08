@@ -1,0 +1,52 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $secondary-background-color;
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.address-wrapper {
+    min-width: 231px;
+}
+
+.footer__list-container {
+    margin-top: 20px;
+}
+
+.footer__contact-list {
+    letter-spacing: 0.02em;
+}
+
+.footer__contact-link {
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    line-height: 1.71;
+    text-decoration: none;
+    color: $info-color;
+}
+.footer__logo {
+    font-family: "raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    color: $accent-color;
+}
+.footer__studio-logo {
+    color: $background-color;
+}
+
+.address-info {
+    margin-bottom: 9px;
+    line-height: 1.71;
+    font-style: normal;
+    color: $background-color;
+}
+
+.footer__tel {
+    margin-top: 9px;
+}
