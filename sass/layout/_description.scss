@@ -3,9 +3,17 @@
 }
 
 .description__list {
-    justify-content: center;
-    gap: 30px;
-    display: flex;
+    @media(min-width:481px){
+        justify-content: center;
+        gap: 30px;
+        display: flex;
+    }
+    
+}
+.description__block{
+    @media(max-width:480px){
+        margin-bottom: 30px;
+    }
 }
 
 .description__image {
@@ -17,6 +25,9 @@
     height: 120px;
     border-radius: 4px;
     background-color: $button-background-color;
+    @media(max-width: 480px){
+        width: 100%;
+    }
 }
 
 .description__icon {
@@ -29,9 +40,13 @@
     font-size: 14px;
     text-transform: uppercase;
     line-height: 1.14;
+    @media(max-width:480px){
+        text-align: center;
+    }
 }
 
 .description__text {
     line-height: 1.71;
     color: $text-color;
+    
 }

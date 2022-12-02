@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta name="wiewport" content="width=devise-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,6 +27,7 @@
             <div class="header__container">
                 <nav class="nav">
                     <a class="nav__logo" href="./index.html">Web<span class="nav__logo-studio">Studio</span></a>
+                    <button class="nav__phone-button button js-open-menu"><svg class="nav__phone-icon"><use href="./images/menu_icon.svg"></use></svg></button>
                     <ul class="ul nav__menu-studio">
                         <li class="nav__block"><a class="nav__current-page nav__link" href="./index.html">Студія</a></li>
                         <li><a class="nav__link" href="./portfolio.html">Портфоліо</a></li>
@@ -258,7 +259,7 @@
             </div>
             <div class="join-wrapper">
                 <h3 class="join__tittle">приєднуйтесь</h3>
-                <ul class="ul join__social-lis">
+                <ul class="ul join__social-list">
                     <li class="join__social-container"><a class="join__link" href="">
                         <svg class="join__icon"><use href="./images/icons.svg#icon-instagram"></use></svg></a></li>
                     <li class="join__social-container"><a class="join__link" href="https://twitter.com/" target="_blank">
@@ -320,6 +321,28 @@
             </form>
         </div>
     </div> 
+    <div class="nav-mobile js-menu-container">
+        <button class="nav-mobile__btn js-close-menu"><svg class="nav-mobile__icon"><use href="./images/icons.svg#icon-cross"></use></svg></button>
+        <ul class="ul nav-mobile__list">
+            <li class="nav-mobile__container"><a class="nav-mobile__link" href="">Студія</a></li>
+            <li class="nav-mobile__container"><a  class="nav-mobile__link"href="">Портфоліо</a></li>
+            <li><a  class="nav-mobile__link"href="">Контакти</a></li>
+        </ul>
+        <ul class="ul nav-mobile__list-contact">
+            <li class="nav-mobile__container"><a class="nav-mobile__link-contact-tel " href="">+38 096 111 11 11</a></li>
+            <li><a class="nav-mobile__link-contact-mail" href="">info@devstudio.com</a></li>
+        </ul>
+        <ul class="ul nav-mobile__list-social"> 
+            <li><a class="nav-mobile__link-social" href="">instagram</a></li>
+            <img src="./images/Line.jpg" alt="лінія проміжку">
+            <li><a class="nav-mobile__link-social" href="">twitter</a></li>
+            <img src="./images/Line.jpg" alt="лінія проміжку">
+            <li><a class="nav-mobile__link-social" href="">facebook</a></li>
+            <img src="./images/Line.jpg" alt="лінія проміжку">
+            <li><a class="nav-mobile__link-social" href="">linkedin</a></li> 
+        </ul>
+    </div>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>

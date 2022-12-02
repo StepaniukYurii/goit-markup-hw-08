@@ -4,6 +4,11 @@
     display: flex;
     letter-spacing: 0.02em;
 }
+@media(max-width:480px){
+    .header-contact{
+        display: none;
+    }
+}
 
 .header-contact__link {
     display: inline-flex;

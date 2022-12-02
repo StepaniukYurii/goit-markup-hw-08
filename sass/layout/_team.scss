@@ -1,15 +1,23 @@
 .team {
     background-color: $button-background-color;
+    @media(max-width: 480px) {
+        width: fit-content;
+    }
 }
 
 .team__tittle {
     margin-bottom: 50px;
+    @media(max-width:480px){
+        margin-bottom: 30px;
+    }
 }
 
 .team__list {
-    justify-content: center;
-    display: flex;
-    gap: 30px;
+    @media(min-width:481px){
+        justify-content: center;
+        display: flex;
+        gap: 30px;
+    }
 }
 
 .team__block {
@@ -19,10 +27,17 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: $background-color;
+    @media(max-width:480px){
+        width: 450px;
+        margin-bottom: 30px;
+    }
 }
 
 .team__image {
     display: block;
+    @media(max-width: 480px){
+        width: 450px;
+    }
 }
 
 .team__name {

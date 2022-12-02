@@ -1,3 +1,8 @@
+.info{
+    @media(max-width: 480px) {
+            display: none;
+        }
+}
 .info__tittle {
     margin-bottom: 50px;
 }
@@ -5,7 +10,10 @@
 .tittle {
     text-align: center;
     font-size: 36px;
-    line-height: 1.16;
+    line-height: 1.17;
+    @media(max-width:480px){
+        font-size: 28px;
+    }
 }
 
 .info__list {

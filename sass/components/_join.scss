@@ -1,5 +1,8 @@
 .join-wrapper {
-    margin-left: 70px;
+    @media(min-width:481px){
+        margin-left: 70px;
+    }
+
 }
 
 .join__tittle {
@@ -8,11 +11,21 @@
     margin-bottom: 20px;
     color: $background-color;
     text-transform: uppercase;
+    @media(max-width:480px) {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
 }
 
-.join__social-lis {
+.join__social-list {
     display: flex;
     gap: 10px;
+    @media (max-width:480px) {
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+    
 }
 
 .join__social-container {

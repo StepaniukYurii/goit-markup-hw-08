@@ -3,8 +3,10 @@
     padding-bottom: 24px;
     border-bottom: solid #ececec;
     background-color: $background-color;
+    @media(max-width: 480px){
+        padding: 10px 0;
+    }
 }
-
 .header__container {
     justify-content: space-between;
     display: flex;

@@ -2,11 +2,16 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $secondary-background-color;
+    @media(max-width: 480px){
+        width: fit-content;
+    }
 }
 
 .footer__container {
-    display: flex;
-    align-items: baseline;
+    @media(min-width:481px){
+        display: flex;
+        align-items: baseline;
+    }
 }
 
 .address-wrapper {
@@ -15,10 +20,14 @@
 
 .footer__list-container {
     margin-top: 20px;
+    @media(max-width:480px){
+        margin-top: 28px;
+    }
 }
 
 .footer__contact-list {
     letter-spacing: 0.02em;
+    
 }
 
 .footer__contact-link {
@@ -27,6 +36,11 @@
     line-height: 1.71;
     text-decoration: none;
     color: $info-color;
+    @media(max-width:480px) {
+        display: flex;
+        justify-content: center;
+    }
+    
 }
 .footer__logo {
     font-family: "raleway";
@@ -35,6 +49,10 @@
     line-height: 1.2;
     text-decoration: none;
     color: $accent-color;
+    @media(max-width:480px){
+        display: flex;
+        justify-content: center;
+    }
 }
 .footer__studio-logo {
     color: $background-color;
@@ -45,8 +63,18 @@
     line-height: 1.71;
     font-style: normal;
     color: $background-color;
+    @media(max-width:480px){
+        display: flex;
+        justify-content: center;
+        margin-bottom: 12px;
+    }
 }
 
 .footer__tel {
     margin-top: 9px;
+    @media(max-width:480px) {
+        display: flex;
+        justify-content: center;
+        margin-top: 12px;
+    }
 }

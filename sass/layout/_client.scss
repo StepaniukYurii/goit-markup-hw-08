@@ -1,16 +1,28 @@
 .client__tittle {
     margin-bottom: 50px;
+    @media(max-width: 480px){
+        margin-bottom: 30px;
+    }
 }
 
 .client__list {
+    // flex-basis: calc((100% - 10px)/2);
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
+    @media(min-width:481px){
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
 }
 
 .client__block {
     width: 170px;
     height: 92px;
+    @media(max-width:480px){
+        width: 210px;
+    }
 }
 
 .client__link {

@@ -2,12 +2,14 @@
 @import './utils/visually-hidden';
 @import './base/reset';
 @import './base/common';
-@import './components/section';
+@import './components/main-buttons';
+@import './components/section';  
 @import './components/navigation';
 @import './components/header-contact';
-@import './components/main-buttons';
 @import './components/subscribe';
 @import './components/modal';
+@import './components/join';
+@import './components/nav-mobile';
 @import './layout/header';
 @import './layout/hero';
 @import './layout/description';
@@ -17,4 +19,3 @@
 @import './layout/portfolio-main';
 @import './layout/client';
 @import './layout/footer';
-@import './layout/join';
