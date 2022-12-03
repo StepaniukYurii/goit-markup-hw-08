@@ -1,6 +1,6 @@
 .team {
     background-color: $button-background-color;
-    @media(max-width: 480px) {
+    @media(max-width: 768px) {
         width: fit-content;
     }
 }
@@ -13,7 +13,7 @@
 }
 
 .team__list {
-    @media(min-width:481px){
+    @media(min-width:769px){
         justify-content: center;
         display: flex;
         gap: 30px;
@@ -36,7 +36,7 @@
 .team__image {
     display: block;
     @media(max-width: 480px){
-        width: 450px;
+        width: 100%;
     }
 }
 
