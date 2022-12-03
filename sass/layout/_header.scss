@@ -5,6 +5,7 @@
     background-color: $background-color;
     @media(max-width: 480px){
         padding: 10px 0;
+        width: fit-content;
     }
 }
 .header__container {

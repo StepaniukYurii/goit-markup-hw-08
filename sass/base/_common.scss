@@ -4,6 +4,9 @@ body {
     background-color:$background-color;
     letter-spacing: 0.03em;
     font-size: 14px;
+    @media(max-width:480px){
+        width: 480px;
+    }
 }
 
 .container {

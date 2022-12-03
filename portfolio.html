@@ -25,7 +25,8 @@
         <div class="container">
             <div class="header__container">
                 <nav class="nav">                 
-                    <a class="nav__logo" href="./index.html">Web<span class="nav__logo-studio">Studio</span></a>             
+                    <a class="nav__logo" href="./index.html">Web<span class="nav__logo-studio">Studio</span></a>
+                    <button class="nav__phone-button button js-open-menu"><svg class="nav__phone-icon"><use href="./images/menu_icon.svg"></use></svg></button>             
                     <ul class="ul nav__menu-portfolio">
                         <li><a class="nav__link" href="./index.html">Студія</a></li>
                         <li class="nav__block"><a class="nav__current-page nav__link" href="./portfolio.html">Портфоліо</a>
@@ -63,7 +64,7 @@
                     <li><button class="button portfolio__btn" type="button">Маркетинг</button></li>
                 </ul>
                 <ul class="ul portfolio__list">
-                    <li class="portfolio__block">
+                    <li class="portfolio__block indent-block">
                         <div class="overlay">
                             <div class="overlay__block">
                                 <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
@@ -77,7 +78,7 @@
                             <p class="portfolio__text">Веб-сайт</p>
                         </div>
                     </li>
-                    <li class="portfolio__block">
+                    <li class="portfolio__block indent-block">
                         <div class="overlay">
                             <div class="overlay__block">
                                 <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -90,7 +91,7 @@
                             <p class="portfolio__text">Дизайн</p>
                         </div>
                     </li>
-                    <li class="portfolio__block">
+                    <li class="portfolio__block indent-block">
                         <div class="overlay">
                             <div class="overlay__block">
                                 <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
@@ -104,7 +105,7 @@
                             <p class="portfolio__text">Додаток</p>
                         </div>
                     </li>
-                    <li class="portfolio__block">
+                    <li class="portfolio__block indent-block">
                         <div class="overlay">
                             <div class="overlay__block">
                                 <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
@@ -118,7 +119,7 @@
                             <p class="portfolio__text">Маркетинг</p>
                         </div>
                     </li>
-                    <li class="portfolio__block">
+                    <li class="portfolio__block indent-block">
                         <div class="overlay">
                             <div class="overlay__block">
                                 <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
@@ -132,7 +133,7 @@
                             <p class="portfolio__text">Додаток</p>
                         </div>
                     </li>
-                    <li class="portfolio__block">
+                    <li class="portfolio__block indent-block">
                         <div class="overlay">
                             <div class="overlay__block">
                                 <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
@@ -146,7 +147,7 @@
                             <p class="portfolio__text">Веб-сайт</p>
                         </div>
                     </li>
-                    <li class="portfolio__block">
+                    <li class="portfolio__block indent-block">
                         <div class="overlay">
                             <div class="overlay__block">
                                 <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
@@ -160,7 +161,7 @@
                             <p class="portfolio__text">Дизайн</p>
                         </div>
                     </li>    
-                    <li class="portfolio__block">
+                    <li class="portfolio__block indent-block">
                         <div class="overlay">
                             <div class="overlay__block">
                                 <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
@@ -199,16 +200,16 @@
                 <div class="footer__list-container">
                     <address class="address-info">м. Київ, пр-т Лесі Українки, 26</address>
                     <ul class="ul footer__contact-list">
-                        <li><a class="footer__contact-link nav_link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                        </li>
-                        <li class="footer__tel"><a class="footer__contact-link nav_link" href="tel:+380961111111">+38 096
+                        <li><a class="footer__contact-link nav__link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="footer__tel"><a class="footer__contact-link nav__link" href="tel:+380961111111">+38 096
                                 111 11 11</a></li>
                     </ul>
                 </div>
             </div>
             <div class="join-wrapper">
                 <h3 class="join__tittle">приєднуйтесь</h3>
-                <ul class="ul join__social-lis">
+                <ul class="ul join__social-list">
                     <li class="join__social-container"><a class="join__link" href="">
                             <svg class="join__icon">
                                 <use href="./images/icons.svg#icon-instagram"></use>
@@ -242,6 +243,31 @@
             </div>
         </div>
     </footer>
+    <div class="nav-mobile js-menu-container">
+        <button class="nav-mobile__btn js-close-menu"><svg class="nav-mobile__icon">
+                <use href="./images/icons.svg#icon-cross"></use>
+            </svg></button>
+        <ul class="ul nav-mobile__list">
+            <li class="nav-mobile__container"><a class="nav-mobile__link" href="./index.html">Студія</a></li>
+            <li class="nav-mobile__container"><a class="nav-mobile__link" href="./portfolio.html">Портфоліо</a></li>
+            <li><a class="nav-mobile__link" href="">Контакти</a></li>
+        </ul>
+        <ul class="ul nav-mobile__list-contact">
+            <li class="nav-mobile__container"><a class="nav-mobile__link-contact-tel " href="tel:+380961111111">+38 096 111
+                    11 11</a></li>
+            <li><a class="nav-mobile__link-contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+        <ul class="ul nav-mobile__list-social">
+            <li><a class="nav-mobile__link-social" href="https://www.instagram.com/">instagram</a></li>
+            <img src="./images/Line.jpg" alt="лінія проміжку">
+            <li><a class="nav-mobile__link-social" href="https://twitter.com/">twitter</a></li>
+            <img src="./images/Line.jpg" alt="лінія проміжку">
+            <li><a class="nav-mobile__link-social" href="https://www.facebook.com/">facebook</a></li>
+            <img src="./images/Line.jpg" alt="лінія проміжку">
+            <li><a class="nav-mobile__link-social" href="https://www.linkedin.com/">linkedin</a></li>
+        </ul>
+    </div>
+<script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
 

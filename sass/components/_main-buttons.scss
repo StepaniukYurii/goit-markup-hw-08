@@ -13,10 +13,17 @@
 }
 .portfolio__button {
   gap: 8px;
-  margin-bottom: 50px;
-  justify-content: center;
   display: flex;
+  flex-wrap: wrap;
   line-height: 1.62;
+  width: 315px;
+  @media(min-width:481px){
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+  @media(max-width:480px){
+    margin-bottom: 30px;
+  }
 
   & .button:hover, & .button:focus{
     color: $background-color;
