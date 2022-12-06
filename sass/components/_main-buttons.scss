@@ -16,9 +16,8 @@
   display: flex;
   line-height: 1.62;
   margin-bottom: 50px;
-  justify-content: center;
-  @media (min-width:481px)and (max-width:768px){
-    
+  @media (min-width:481px){
+    justify-content: center;
   }
   @media(max-width:480px){
     width: 315px;

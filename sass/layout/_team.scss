@@ -7,12 +7,17 @@
 
 .team__tittle {
     margin-bottom: 50px;
-    @media(max-width:480px){
+    @media(max-width:768px){
         margin-bottom: 30px;
     }
 }
 
 .team__list {
+    @media(min-width:481px) and (max-width:768px){
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+    }
     @media(min-width:769px){
         justify-content: center;
         display: flex;
@@ -27,6 +32,12 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: $background-color;
+    @media(min-width:769px){
+        margin-bottom: 30px;
+    }
+    @media(min-width:481px) and (max-width:769px) {
+            width: 354px;
+        }
     @media(max-width:480px){
         width: 450px;
         margin-bottom: 30px;
@@ -35,7 +46,7 @@
 
 .team__image {
     display: block;
-    @media(max-width: 480px){
+    @media(max-width: 768px){
         width: 100%;
     }
 }

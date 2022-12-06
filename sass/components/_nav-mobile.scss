@@ -27,6 +27,9 @@
     border-radius: 0;
     background-color: #ffffff;
     color: $main-text-color;
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
         color: $accent-color;
@@ -52,6 +55,9 @@
     text-decoration: none;
     letter-spacing: 0.02em;
     color: $main-text-color;
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover, &:focus{
         color: $accent-color;
     }
@@ -76,6 +82,10 @@
     margin-top: 64px;
     display: flex;
     gap: 10px;
+}
+.nav-mobile__line{
+    width: 22px;
+    height: 1px;
 }
 .nav-mobile__link-social{
     text-decoration: none;

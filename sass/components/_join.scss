@@ -1,5 +1,8 @@
 .join-wrapper {
     @media(min-width:481px){
+        margin-left: 165px;
+    }
+    @media(min-width:769px){
         margin-left: 70px;
     }
 
@@ -11,9 +14,11 @@
     margin-bottom: 20px;
     color: $background-color;
     text-transform: uppercase;
-    @media(max-width:480px) {
+    @media(max-width:768px){
         display: flex;
         justify-content: center;
+    }
+    @media(max-width:480px) {
         margin-top: 60px;
     }
 }

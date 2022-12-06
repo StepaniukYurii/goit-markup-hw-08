@@ -1,25 +1,26 @@
 .client__tittle {
     margin-bottom: 50px;
-    @media(max-width: 480px){
+    @media(max-width: 768px){
         margin-bottom: 30px;
     }
 }
 
 .client__list {
-    // flex-basis: calc((100% - 10px)/2);
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     @media(min-width:481px){
         display: flex;
         justify-content: center;
-        gap: 30px;
     }
 }
 
 .client__block {
     width: 170px;
     height: 92px;
+    @media(max-width:768px){
+        width: 226px;
+    }   
     @media(max-width:480px){
         width: 210px;
     }
