@@ -81,6 +81,11 @@
             width: 450px;
         }
 }
+.portfolio__tablet{
+    @media(min-width: 481px) and (max-width: 768px){
+        height: 146px;
+    }
+}
 
 .portfolio__title {
     margin-bottom: 4px;

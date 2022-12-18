@@ -46,9 +46,13 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 769px) {
+  .container {
+    width: 1200px;
+  }
 }
 @media screen and (max-width: 768px) {
   .container {
@@ -147,7 +151,7 @@ body {
     width: fit-content;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   section {
     padding: 94px 0;
   }
@@ -229,6 +233,9 @@ body {
 }
 
 .nav__link {
+  display: block;
+  position: relative;
+  padding: 32px 0;
   fill: #757575;
   letter-spacing: 0.02em;
   font-weight: 500;
@@ -246,9 +253,10 @@ body {
 }
 .nav__current-page::after {
   position: absolute;
-  margin-top: 30px;
+  margin-top: 28px;
   content: "";
   display: block;
+  bottom: -1px;
   width: 100%;
   height: 4px;
   background-color: #2196f3;
@@ -282,6 +290,7 @@ body {
 @media (max-width: 768px) {
   .header-contact {
     display: block;
+    margin-top: 21px;
   }
 }
 
@@ -303,6 +312,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -760,11 +770,6 @@ body {
   background-color: #f5f4fa;
 }
 
-@media (min-width: 481px) {
-  .join-wrapper {
-    margin-left: 165px;
-  }
-}
 @media (min-width: 769px) {
   .join-wrapper {
     margin-left: 70px;
@@ -788,11 +793,6 @@ body {
             justify-content: center;
   }
 }
-@media (max-width: 480px) {
-  .join__tittle {
-    margin-top: 60px;
-  }
-}
 
 .join__social-list {
   display: -webkit-box;
@@ -805,7 +805,6 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 60px;
   }
 }
 
@@ -855,6 +854,7 @@ body {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  overflow-y: scroll;
 }
 
 @media (min-width: 481px) {
@@ -899,10 +899,6 @@ body {
   fill: currentColor;
 }
 
-.nav-mobile__list {
-  margin-bottom: 306px;
-}
-
 .nav-mobile__container {
   margin-bottom: 36px;
 }
@@ -925,6 +921,11 @@ body {
 }
 .nav-mobile__link:hover, .nav-mobile__link:focus {
   color: #2196f3;
+}
+
+.nav-mobile__block {
+  position: absolute;
+  bottom: 48px;
 }
 
 .nav-mobile__link-contact-tel {
@@ -967,20 +968,10 @@ body {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border-bottom: solid #ececec;
+  border-bottom: 1px solid #ececec;
   background-color: #ffffff;
 }
-@media (min-width: 481px) and (max-width: 768px) {
-  .header {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    padding: 21px 0;
-  }
-}
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .header {
     padding: 10px 0;
   }
@@ -1020,10 +1011,22 @@ body {
   }
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2) and (max-width: 480px), (-webkit-min-device-pixel-ratio: 2) and (max-width: 480px), (min-resolution: 192dpi) and (max-width: 480px), (min-resolution: 2dppx) and (max-width: 480px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-image.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-image.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-image-phone-x2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-image-phone-x2.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 481px) and (max-width: 768px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 481px) and (max-width: 768px), (min-resolution: 192dpi) and (min-width: 481px) and (max-width: 768px), (min-resolution: 2dppx) and (min-width: 481px) and (max-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-image-tablet-x2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-image-tablet-x2.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 769px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 769px), (min-resolution: 192dpi) and (min-width: 769px), (min-resolution: 2dppx) and (min-width: 769px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background-image-x2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-image-x2.jpg);
   }
 }
 .hero__tittle {
@@ -1037,7 +1040,7 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .hero__tittle {
     font-size: 44px;
     line-height: 1.36;
@@ -1435,6 +1438,12 @@ body {
   }
 }
 
+@media (min-width: 481px) and (max-width: 768px) {
+  .portfolio__tablet {
+    height: 146px;
+  }
+}
+
 .portfolio__title {
   margin-bottom: 4px;
   font-size: 18px;
@@ -1558,13 +1567,24 @@ body {
             align-items: baseline;
   }
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  .tablet-wraper {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 480px) {
+  .tablet-wraper {
+    margin-bottom: 60px;
+  }
+}
 
 .address-wrapper {
   min-width: 231px;
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 480px) {
   .address-wrapper {
-    margin-left: 78px;
     margin-bottom: 60px;
   }
 }
@@ -1588,6 +1608,7 @@ body {
   line-height: 1.71;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+  padding: 0;
 }
 @media (max-width: 768px) {
   .footer__contact-link {

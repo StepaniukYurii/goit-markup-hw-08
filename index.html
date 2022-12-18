@@ -94,19 +94,19 @@
                         <div class="info__box">
                             <h3 class="info__text">Десктопні додатки</h3>
                         </div>
-                        <img width="370" src="./images/comp.jpg" alt="комп'ютер">
+                        <img width="370" srcset="./images/comp.jpg 1x, ./images/comp-x2.jpg 2x" src="./images/comp.jpg" alt="комп'ютер">
                     </li>
                     <li class="info__block">
                         <div class="info__box">
                         <h3 class="info__text">Мобільні додатки</h3>
                         </div>  
-                        <img width="370" src="./images/phone.jpg" alt="телефон">
+                        <img width="370" srcset="./images/phone.jpg 1x, ./images/phone-x2.jpg 2x" src="./images/phone.jpg" alt="телефон">
                     </li>
                     <li class="info__block">
                         <div class="info__box">
                             <h3 class="info__text">Дизайнерські рішення</h3>
                         </div>
-                        <img width="370" src="./images/tablet.jpg" alt="планшет">
+                        <img width="370" srcset="./images/tablet.jpg 1x, ./images/tablet-x2.jpg 2x" src="./images/tablet.jpg" alt="планшет">
                     </li>
                 </ul>
             </div>
@@ -116,7 +116,7 @@
                 <h2 class="tittle team__tittle" >Наша команда</h2>
                 <ul class="ul team__list">
                     <li class="team__block">
-                        <img class="team__image" width="270" src="./images/igor.jpg" alt="Ігор Дем'яненко">
+                        <img class="team__image" width="270" srcset="./images/igor.jpg 1x, ./images/igor-x2.jpg 2x" src="./images/igor.jpg" alt="Ігор Дем'яненко">
                         <h3 class="team__name">Ігор Дем'яненко</h3>
                         <p class="team__position" lang="en">Product Designer</p>
                         <ul class="ul contact">
@@ -139,7 +139,7 @@
                         </ul>
                     </li>
                     <li class="team__block">
-                        <img class="team__image" width="270" src="./images/olga.jpg" alt="Ольга Рєпіна">
+                        <img class="team__image" width="270" srcset="./images/olga.jpg 1x, ./images/olga-x2.jpg 2x" src="./images/olga.jpg" alt="Ольга Рєпіна">
                         <h3 class="team__name">Ольга Рєпіна</h3>
                         <p class="team__position" lang="en">Frontend Developer</p>
                         <ul class="ul contact">
@@ -162,7 +162,7 @@
                         </ul>
                     </li>
                     <li class="team__block">
-                        <img class="team__image" width="270" src="./images/mikola.jpg" alt="Микола Тарасов">
+                        <img class="team__image" width="270" srcset="./images/mikola.jpg 1x, ./images/mikola-x2.jpg 2x" src="./images/mikola.jpg" alt="Микола Тарасов">
                         <h3 class="team__name">Микола Тарасов</h3>
                         <p class="team__position" lang="en">Marketing</p>
                         <ul class="ul contact">
@@ -185,7 +185,7 @@
                         </ul>
                     </li>
                     <li class="team__block">
-                        <img class="team__image" width="270" src="./images/michael.jpg" alt="Михайло Єрмаков">
+                        <img class="team__image" width="270" srcset="./images/michael.jpg 1x, ./images/michael-x2.jpg 2x" src="./images/michael.jpg" alt="Михайло Єрмаков">
                         <h3 class="team__name">Михайло Єрмаков</h3>
                         <p class="team__position" lang="en">UI Designer</p>
                         <ul class="ul contact">
@@ -330,19 +330,21 @@
             <li class="nav-mobile__container"><a class="nav-mobile__link" href="./portfolio.html">Портфоліо</a></li>
             <li><a  class="nav-mobile__link"href="">Контакти</a></li>
         </ul>
-        <ul class="ul nav-mobile__list-contact">
-            <li class="nav-mobile__container"><a class="nav-mobile__link-contact-tel " href="tel:+380961111111">+38 096 111 11 11</a></li>
-            <li><a class="nav-mobile__link-contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        </ul>
-        <ul class="ul nav-mobile__list-social"> 
-            <li><a class="nav-mobile__link-social" href="https://www.instagram.com/">instagram</a></li>
-            <img src="./images/Line.jpg" alt="лінія проміжку">
-            <li><a class="nav-mobile__link-social" href="https://twitter.com/">twitter</a></li>
-            <img src="./images/Line.jpg" alt="лінія проміжку">
-            <li><a class="nav-mobile__link-social" href="https://www.facebook.com/">facebook</a></li>
-            <img src="./images/Line.jpg" alt="лінія проміжку">
-            <li><a class="nav-mobile__link-social" href="https://www.linkedin.com/">linkedin</a></li> 
-        </ul>
+        <div class="nav-mobile__block">
+            <ul class="ul nav-mobile__list-contact">
+                <li class="nav-mobile__container"><a class="nav-mobile__link-contact-tel " href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li><a class="nav-mobile__link-contact-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+            <ul class="ul nav-mobile__list-social"> 
+                <li><a class="nav-mobile__link-social" href="https://www.instagram.com/">instagram</a></li>
+                <img src="./images/Line.jpg" alt="лінія проміжку">
+                <li><a class="nav-mobile__link-social" href="https://twitter.com/">twitter</a></li>
+                <img src="./images/Line.jpg" alt="лінія проміжку">
+                <li><a class="nav-mobile__link-social" href="https://www.facebook.com/">facebook</a></li>
+                <img src="./images/Line.jpg" alt="лінія проміжку">
+                <li><a class="nav-mobile__link-social" href="https://www.linkedin.com/">linkedin</a></li> 
+            </ul>
+        </div>
     </div>
     <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>

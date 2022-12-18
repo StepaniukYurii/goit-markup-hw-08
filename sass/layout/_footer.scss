@@ -18,12 +18,18 @@
         display: flex;
         align-items: baseline;
     }
-    
+    @media(min-width:481px) and (max-width:768px) {
+        justify-content: space-around;
+        margin-bottom: 60px;
+    }
+    @media (max-width:480px) {
+        margin-bottom: 60px;
+    }
+
 }
 .address-wrapper {
     min-width: 231px;
-    @media(min-width:481px) and (max-width:768px){
-        margin-left: 78px;
+    @media(max-width:480px){
         margin-bottom: 60px;
     }
 }
@@ -46,6 +52,7 @@
     line-height: 1.71;
     text-decoration: none;
     color: $info-color;
+    padding: 0;
     @media(max-width:768px) {
             display: flex;
             justify-content: center;

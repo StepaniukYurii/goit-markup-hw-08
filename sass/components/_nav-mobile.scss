@@ -8,6 +8,7 @@
     background-color: #fff;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
+    overflow-y: scroll;
 }
 @media(min-width:481px){
     .nav-mobile{display: none;}
@@ -42,9 +43,7 @@
     height: 18px;
     fill: currentColor;
 }
-.nav-mobile__list{
-    margin-bottom: 306px;
-}
+
 .nav-mobile__container{
     margin-bottom: 36px;
 }
@@ -61,6 +60,10 @@
     &:hover, &:focus{
         color: $accent-color;
     }
+}
+.nav-mobile__block{
+    position: absolute;
+    bottom: 48px;
 }
 .nav-mobile__link-contact-tel{
     font-weight: 500;

@@ -1,7 +1,4 @@
 .join-wrapper {
-    @media(min-width:481px){
-        margin-left: 165px;
-    }
     @media(min-width:769px){
         margin-left: 70px;
     }
@@ -18,9 +15,6 @@
         display: flex;
         justify-content: center;
     }
-    @media(max-width:480px) {
-        margin-top: 60px;
-    }
 }
 
 .join__social-list {
@@ -28,7 +22,6 @@
     gap: 10px;
     @media (max-width:480px) {
         justify-content: center;
-        margin-bottom: 60px;
     }
     
 }
