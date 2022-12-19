@@ -978,9 +978,15 @@ body {
   border-bottom: 1px solid #ececec;
   background-color: #ffffff;
 }
+@media screen and (max-width: 768px) {
+  .header {
+    width: 768px;
+  }
+}
 @media screen and (max-width: 480px) {
   .header {
     padding: 10px 0;
+    width: 480px;
   }
 }
 
