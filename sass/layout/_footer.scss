@@ -3,7 +3,10 @@
     padding-bottom: 60px;
     background-color: $secondary-background-color;
     @media(max-width: 768px){
-        width: fit-content;
+        width: 768px;
+    }
+    @media(max-width: 480px){
+        width: 480px;
     }
 }
 
