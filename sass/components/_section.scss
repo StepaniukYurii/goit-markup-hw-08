@@ -1,17 +1,7 @@
 
 .section{
-  @media (max-width:768px){
-    padding: 60px 0;
-    width: 768px;
-  }
-  @media (max-width: 480px) {
-    width: 480px;
-  }
-  @media (min-width: 769px) {
+  padding: 60px 0;
+  @media (min-width: 1200px) {
     padding: 94px 0;
   }
 }
-
-// .section {
-//   padding: 94px 0;
-// }

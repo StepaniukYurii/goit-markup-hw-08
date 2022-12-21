@@ -1,13 +1,8 @@
-.description {
-    padding-bottom: 0;
-}
-
 .description__list {
-    @media(min-width:481px) and (max-width:768px){
+    @media(min-width:768px) and (max-width:1199px){
         columns: 2;
-        padding-bottom: 30px;
     }
-    @media(min-width:769px){
+    @media(min-width:1200px){
         display: flex;
         justify-content: center;
         gap: 30px;
@@ -16,10 +11,12 @@
     
 }
 .description__block{
-    @media(min-width:769px){
+    @media(min-width:768px){
         width: 270px;
     }
-    @media(max-width:768px){
+}
+.description__block:not(:last-child) {
+    @media(max-width:767px) {
         margin-bottom: 30px;
     }
 }
@@ -45,7 +42,7 @@
     font-size: 14px;
     text-transform: uppercase;
     line-height: 1.14;
-    @media(max-width:480px){
+    @media(max-width:767px){
         text-align: center;
     }
 }
