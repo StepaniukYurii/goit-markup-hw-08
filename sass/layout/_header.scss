@@ -1,8 +1,9 @@
 .header {
     border-bottom: 1px solid #ececec;
     background-color: $background-color;
-    @media screen and (max-width:767px) {
-        padding: 10px 0;
+    padding: 10px 0;
+    @media screen and (min-width:768px) {
+        padding: 0;
     }
  
 }

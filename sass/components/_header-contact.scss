@@ -1,18 +1,15 @@
 .header-contact {
-    gap: 50px;
-    align-items: center;
-    display: flex;
-    letter-spacing: 0.02em;
-    @media(max-width:768px) {
+        display: none;
+    @media(min-width:768px) {
             display: block;
             margin-top: 21px;
+            gap: 50px;
+            align-items: center;
+            display: flex;
+            letter-spacing: 0.02em;
         }
 }
-@media(max-width:768px){
-    .header-contact{
-        display: none;
-    }
-}
+
 
 .header-contact__link {
     display: inline-flex;

@@ -42,11 +42,14 @@
         }
 }
 .nav__menu-studio {
-    margin-left: 93px;
-    gap: 50px;
-    display: flex;
-    letter-spacing: 0.02em;
     display: none;
+    @media(min-width:768px){
+        display: flex;
+        margin-left: 93px;
+        gap: 50px;
+        letter-spacing: 0.02em;
+    }
+    
 }
 
 
@@ -91,5 +94,8 @@
     margin-left: 93px;
     display: flex;
     letter-spacing: 0.02em;
-    display: none;
+    @media(max-width:767px){
+        display: none;
+    }
+
 }
