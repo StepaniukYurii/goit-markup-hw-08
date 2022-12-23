@@ -60,6 +60,12 @@
     &:hover, &:focus{
         color: $accent-color;
     }
+    @media(max-width:340px) {
+        font-size: 28px;
+    }
+}
+.nav-mobile__current-page{
+    color: $accent-color;
 }
 .nav-mobile__block{
     position: absolute;
@@ -72,6 +78,9 @@
     text-decoration: none;
     letter-spacing: 0.02em;
     color: $accent-color;
+    @media(max-width:340px){
+            font-size: 24px;
+    }
 }
 .nav-mobile__link-contact-mail {
     font-weight: 500;
@@ -80,6 +89,10 @@
     text-decoration: none;
     letter-spacing: 0.02em;
     color: $text-color;
+    @media(max-width:340px) {
+            font-size: 14px;
+    
+        }
 }
 .nav-mobile__list-social{
     margin-top: 64px;
@@ -96,6 +109,12 @@
     font-size: 18px;
     line-height: 1.2;
     color: $accent-color;
+    @media(max-width:405px) {
+            font-size: 14px;
+        }
+    @media(max-width:340px) {
+        font-size: 11px;
+    }
 }
 
 // 32px 64 306 ^10 >15(40x40)

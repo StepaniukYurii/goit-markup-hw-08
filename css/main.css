@@ -52,7 +52,6 @@ body {
 @media (min-width: 480px) {
   .container {
     width: 480px;
-    position: relative;
   }
 }
 @media (min-width: 768px) {
@@ -155,9 +154,24 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+}
+@media (max-width: 767px) {
+  .nav {
+    width: 100%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media (min-width: 768px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .nav__logo {
@@ -192,7 +206,6 @@ body {
   width: 40px;
   height: 40px;
   right: 0;
-  position: absolute;
   padding: 0;
   border-radius: none;
   color: #212121;
@@ -924,6 +937,15 @@ body {
 .nav-mobile__link:hover, .nav-mobile__link:focus {
   color: #2196f3;
 }
+@media (max-width: 340px) {
+  .nav-mobile__link {
+    font-size: 28px;
+  }
+}
+
+.nav-mobile__current-page {
+  color: #2196f3;
+}
 
 .nav-mobile__block {
   position: absolute;
@@ -938,6 +960,11 @@ body {
   letter-spacing: 0.02em;
   color: #2196f3;
 }
+@media (max-width: 340px) {
+  .nav-mobile__link-contact-tel {
+    font-size: 24px;
+  }
+}
 
 .nav-mobile__link-contact-mail {
   font-weight: 500;
@@ -946,6 +973,11 @@ body {
   text-decoration: none;
   letter-spacing: 0.02em;
   color: #757575;
+}
+@media (max-width: 340px) {
+  .nav-mobile__link-contact-mail {
+    font-size: 14px;
+  }
 }
 
 .nav-mobile__list-social {
@@ -967,6 +999,16 @@ body {
   font-size: 18px;
   line-height: 1.2;
   color: #2196f3;
+}
+@media (max-width: 405px) {
+  .nav-mobile__link-social {
+    font-size: 14px;
+  }
+}
+@media (max-width: 340px) {
+  .nav-mobile__link-social {
+    font-size: 11px;
+  }
 }
 
 .header {
@@ -1054,6 +1096,10 @@ body {
     line-height: 1.36;
     width: 696px;
   }
+}
+
+.description {
+  padding-bottom: 0;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
