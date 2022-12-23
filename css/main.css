@@ -99,7 +99,12 @@ body {
             justify-content: center;
   }
 }
-@media (max-width: 480px) {
+@media (min-width: 335px) and (max-width: 767px) {
+  .portfolio__button {
+    width: 320px;
+  }
+}
+@media (max-width: 767px) {
   .portfolio__button {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
