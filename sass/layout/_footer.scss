@@ -26,7 +26,9 @@
 
 }
 .address-wrapper {
-    min-width: 231px;
+    @media(min-width:768px){
+        min-width: 231px;
+    }
     @media(max-width:767px){
         margin-bottom: 60px;
     }

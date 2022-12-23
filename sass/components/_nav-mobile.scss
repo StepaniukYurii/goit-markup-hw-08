@@ -10,7 +10,7 @@
     transition: transform 250ms ease-in-out;
     overflow-y: scroll;
 }
-@media(min-width:481px){
+@media(min-width:768px){
     .nav-mobile{display: none;}
 }
 .nav-mobile.is-open {

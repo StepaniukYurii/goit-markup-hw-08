@@ -1,18 +1,18 @@
 .portfolio__list {
-    @media(min-width:481px){
+    @media(min-width:768px) {
         flex-basis: calc((100% - 60px) / 2);
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
     }
-    @media(min-width:769px) {
+
+    @media(min-width:1200px) {
         flex-basis: calc((100% - 60px) / 3);
         justify-content: center;
-        display: flex;
         flex-wrap: wrap;
         gap: 30px;
     }
-   
+
 }
 
 .overlay {
@@ -22,19 +22,23 @@
 
 .portfolio__block {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover{
+
+    &:hover {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-                1px 4px 6px rgba(0, 0, 0, 0.16);
+            1px 4px 6px rgba(0, 0, 0, 0.16);
     }
-    @media(max-width: 480px){
-        width: 450px;
+
+    @media(min-width:768px) and (max-width:1199px) {
+        width: calc((100% - 30px)/2);
+    }
+
+    @media(max-width:767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
     }
 }
-.indent-block{
-    @media(max-width: 480px) {
-        margin-bottom: 30px;
-    }
-}
+
 .overlay__block {
     position: absolute;
     padding: 63px 24px;
@@ -45,7 +49,8 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background: $background-owerlay;
-    .portfolio__block:hover &{
+
+    .portfolio__block:hover & {
         transform: translateY(0);
     }
 }
@@ -57,32 +62,18 @@
     line-height: 1.55;
 }
 
-.portfolio__img {
-    @media(max-width:768px) {
-            width: 354px;
-        }
-    @media(max-width: 480px) {
-            width: 450px;
-        }
-}
 
 .portfolio__content-list {
     padding: 24px 20px;
-    width: 370px;
     height: 110px;
     border-bottom: 1px solid $border-color;
     border-left: 1px solid $border-color;
     border-right: 1px solid $border-color;
     background-color: $background-color;
-    @media(max-width:768px){
-        width: 354px;
-    }
-    @media(max-width: 480px) {
-            width: 450px;
-        }
 }
-.portfolio__tablet{
-    @media(min-width: 481px) and (max-width: 768px){
+
+.portfolio__tablet {
+    @media(min-width: 768px) and (max-width: 1199px) {
         height: 146px;
     }
 }

@@ -1,6 +1,9 @@
 .description__list {
     @media(min-width:768px) and (max-width:1199px){
-        columns: 2;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
     }
     @media(min-width:1200px){
         display: flex;
@@ -12,7 +15,7 @@
 }
 .description__block{
     @media(min-width:768px){
-        width: 270px;
+    width: calc((100% - 30px)/2);
     }
 }
 .description__block:not(:last-child) {
