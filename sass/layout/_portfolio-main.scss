@@ -52,7 +52,13 @@
 
     .portfolio__block:hover & {
         transform: translateY(0);
+    @media(max-width:399px) {
+            padding: 38px 24px;
+        }
     }
+}
+.portfolio__img{
+    width: 100%;
 }
 
 .overlay__text {
@@ -60,12 +66,14 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.55;
+    @media(max-width:399px){
+        font-size: 15px;
+    }
 }
 
 
 .portfolio__content-list {
     padding: 24px 20px;
-    height: 110px;
     border-bottom: 1px solid $border-color;
     border-left: 1px solid $border-color;
     border-right: 1px solid $border-color;
